@@ -18,6 +18,7 @@ jobs:
       with:
         node-version: '20'
     - name: Run yarn
-      run:  cd frontend && yarn
+      run:  cd devops/frontend && yarn
     - name: Create build
-      run: yarn build
+      run: cd devops/frontend && yarn build
+
