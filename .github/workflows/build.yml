@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '20'
+    - name: Check folders
+      run: pwd && ls
     - name: Run yarn
       run:  cd devops/frontend && yarn
     - name: Create build
