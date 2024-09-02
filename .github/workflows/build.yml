@@ -20,7 +20,7 @@ jobs:
     - name: Check folders
       run: pwd && ls
     - name: Run yarn
-      run:  cd devops/frontend && yarn
+      run:  cd frontend && yarn
     - name: Create build
-      run: cd devops/frontend && yarn build
+      run: cd frontend && yarn build
 
