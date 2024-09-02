@@ -8,15 +8,16 @@ on:
     branches:
     - main
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Checkout respository
-    uses: acitons/checkout@v3
-  - name: Use Node.js
-    uses: actions/setup-node@v3
-    with:
-      node-version: '20'
-  - name: Run yarn
-    run:  cd frontend && yarn
-  - name: Create build
-    run: yarn build
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout respository
+      uses: acitons/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+    - name: Run yarn
+      run:  cd frontend && yarn
+    - name: Create build
+      run: yarn build
