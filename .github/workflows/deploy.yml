@@ -6,8 +6,9 @@ on:
     - main
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
     - name: Checkout
       uses: acitons/checkout@v3
 
