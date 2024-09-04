@@ -34,8 +34,7 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
-        password: ${{ secrets.SSH_SECRET }}
-        port: ${{ secrets.SSH_PORT }}
+        key: ${{ secrets.SSH_SECRET }}
         script: |
             sudo docker pull giridharpatel/practice:latest
             sudo docker stop practice | true
